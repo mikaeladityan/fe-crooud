@@ -63,10 +63,7 @@ button {
   text-transform: none;
 }
 
-button,
-input:where([type=button]),
-input:where([type=reset]),
-input:where([type=submit]) {
+button {
   -webkit-appearance: button;
   appearance: button;
   background-color: initial;
@@ -79,6 +76,66 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+header {
+  color: #fff;
+  background-color: #0c2f4a;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+header nav div a {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+header nav div ul {
+  display: none;
+}
+header menu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #0c2f4a;
+}
+header menu li {
+  margin: 0 0 0 auto;
+  position: relative;
+  top: 4rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
+}
+header menu li ::before {
+  content: "+";
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+header menu li a {
+  font-size: 1rem;
+}
+header menu button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

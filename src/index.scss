@@ -1,9 +1,6 @@
+// @use "../components/header";
+@import "../components/library";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
-// Variable
-$font-family: "Plus Jakarta Sans", system-ui;
-$white: #fff;
-$black: #000;
 
 *,
 :after,
@@ -64,10 +61,7 @@ button {
 	text-transform: none;
 }
 
-button,
-input:where([type="button"]),
-input:where([type="reset"]),
-input:where([type="submit"]) {
+button {
 	-webkit-appearance: button;
 	appearance: button;
 	background-color: initial;
@@ -80,4 +74,70 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+// Base styling
+.hidden {
+	display: none;
+}
+.visible {
+	display: block;
+}
+
+// @import "./library";
+
+// Mobile First
+header {
+	color: $white;
+	background-color: $blue;
+	position: relative;
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 1rem 1.5rem;
+		div {
+			a {
+				font-size: 1.25rem;
+				font-weight: 800;
+				letter-spacing: 0.1rem;
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+	menu {
+		position: absolute;
+		display: none;
+		width: 100%;
+		height: 100vh;
+		color: $white;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background-color: $blue;
+		li {
+			margin: 0 0 0 auto;
+			position: relative;
+			top: 4rem;
+			padding: 1rem;
+			border-bottom: 1px solid #ffffff80;
+			::before {
+				content: "+";
+				font-size: 1.5rem;
+				margin-right: 2rem;
+			}
+			a {
+				font-size: 1rem;
+			}
+		}
+
+		button {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+	}
 }
