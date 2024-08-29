@@ -1,0 +1,92 @@
+@import "./library";
+
+header {
+	color: $white;
+	background-color: $blue;
+	position: relative;
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 1rem 0.5rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #ffffff80;
+		div {
+			a {
+				@include text-xl;
+				font-weight: 800;
+				letter-spacing: 0.1rem;
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+	menu {
+		position: absolute;
+		display: none;
+		width: 100%;
+		height: 100vh;
+		color: $white;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background-color: $blue;
+		li {
+			margin: 0 0 0 auto;
+			position: relative;
+			top: 4rem;
+			padding: 1rem;
+			border-bottom: 1px solid #ffffff80;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			a {
+				@include text-lg;
+			}
+		}
+
+		button {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+	}
+
+	section {
+		display: grid;
+
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		gap: 1.5rem;
+		padding: 1rem 0;
+		div {
+			margin-top: 3rem;
+			h1 {
+				@include text-sm;
+				font-weight: 600;
+			}
+			h2 {
+				@include text-9xl;
+				font-weight: 800;
+				text-transform: uppercase;
+				span {
+					color: $green;
+				}
+			}
+			p {
+				font-weight: 400;
+				margin-bottom: 2rem;
+			}
+			a {
+				padding: 0.875rem 1.75rem;
+				border: 2px solid $white;
+				border-radius: 2rem;
+			}
+		}
+		img {
+			width: 60%;
+			margin: 0 auto;
+		}
+	}
+}

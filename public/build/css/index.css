@@ -9,10 +9,13 @@ header nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
 }
 header nav div a {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
@@ -36,19 +39,54 @@ header menu li {
   top: 4rem;
   padding: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
-}
-header menu li ::before {
-  content: "+";
-  font-size: 1.5rem;
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 header menu li a {
-  font-size: 1rem;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
 }
 header menu button {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+header section {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+header section div {
+  margin-top: 3rem;
+}
+header section div h1 {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 600;
+}
+header section div h2 {
+  font-size: 6rem; /* 96px */
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+header section div h2 span {
+  color: #6ebe4a;
+}
+header section div p {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+header section div a {
+  padding: 0.875rem 1.75rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+}
+header section img {
+  width: 60%;
+  margin: 0 auto;
 }
 
 *,
@@ -61,6 +99,8 @@ header menu button {
 }
 
 html {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -136,6 +176,16 @@ ul {
 
 .visible {
   display: block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */

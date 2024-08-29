@@ -1,5 +1,4 @@
-@use "../components/header";
-@import "../components/library";
+@import "components/library", "components/header";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 *,
@@ -11,6 +10,7 @@
 	padding: 0;
 }
 html {
+	@include text-base;
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
 	-moz-tab-size: 4;
@@ -82,4 +82,13 @@ ul {
 }
 .visible {
 	display: block;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 95%;
+	margin: 0 auto;
 }
