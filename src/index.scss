@@ -1,5 +1,5 @@
 @import "components/library", "components/header", "components/requirement", "components/inspiration",
-	"components/about", "components/solution";
+	"components/about", "components/solution", "components/footer";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 *,
@@ -50,13 +50,20 @@ input {
 	font-family: inherit;
 	font-feature-settings: inherit;
 	font-variation-settings: inherit;
-	font-size: 100%;
+	@include text-sm;
 	font-weight: inherit;
 	line-height: inherit;
 	letter-spacing: inherit;
-	color: inherit;
+	color: $blue;
 	margin: 0;
-	padding: 0;
+	padding: 0.5rem 1rem;
+	background-color: #d9d9d9;
+	border-radius: 3rem;
+	width: 100%;
+}
+input:focus {
+	outline: none !important;
+	border: none !important;
 }
 button {
 	text-transform: none;

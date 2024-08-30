@@ -337,6 +337,78 @@ main .inspiration .container .inspiration-body .card:nth-child(8) {
   letter-spacing: 0.8px;
 }
 
+footer {
+  position: relative;
+}
+footer .head-footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+footer .head-footer div {
+  text-align: center;
+}
+footer .head-footer div div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .head-footer div div i {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+footer .head-footer .list-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+footer .head-footer .list-footer h6 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: #0c2f4a;
+}
+footer .main-footer {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+footer .main-footer p {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+footer .main-footer div h5 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  color: #0c2f4a;
+  margin-bottom: 0.85rem;
+}
+footer .main-footer div .form-input {
+  width: 60%;
+}
+footer .main-footer div .form-input .input-group {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-top: 0.5rem;
+}
+footer .main-footer div .form-input .input-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #0c2f4a;
+  color: #fff;
+}
+
 *,
 :after,
 :before {
@@ -390,13 +462,22 @@ input {
   font-family: inherit;
   font-feature-settings: inherit;
   font-variation-settings: inherit;
-  font-size: 100%;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
   font-weight: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  color: inherit;
+  color: #0c2f4a;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 1rem;
+  background-color: #d9d9d9;
+  border-radius: 3rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 button {
