@@ -1,0 +1,92 @@
+@import "library";
+.about-us {
+	position: relative;
+	padding-top: 11rem;
+	.about-body {
+		background-color: $blue;
+		padding-bottom: 2rem;
+		position: relative;
+		top: -0.4rem;
+		.container {
+			padding: 0 0rem;
+			h2 {
+				@include text-3xl;
+				font-weight: 800;
+				text-transform: uppercase;
+				color: $white;
+				padding: 2rem 0;
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+				gap: 1.5rem;
+				.card {
+					background-color: #ffffff20;
+					border-radius: 1rem;
+					border: none;
+					box-shadow: none;
+					position: relative;
+					padding: 2rem;
+					.icon-card {
+						position: absolute;
+						top: 2rem;
+						right: 2rem;
+						i {
+							@include text-xl;
+							color: $green;
+						}
+					}
+					.card-body {
+						color: $white;
+						i {
+							display: flex;
+							width: 3rem;
+							height: 3rem;
+							@include text-2xl;
+							background-color: #ffffff80;
+							border-radius: 100%;
+							align-items: center;
+							justify-content: center;
+						}
+						h3 {
+							margin-top: 3rem;
+						}
+						p {
+							@include text-xs;
+							text-wrap: wrap;
+						}
+					}
+				}
+			}
+
+			a {
+				margin: 2rem 0 0 0;
+				padding: 0.875rem 1.75rem;
+				border: 2px solid $green;
+				background-color: $green;
+				border-radius: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 3rem;
+				width: 100%;
+				color: $ligter-white;
+				position: relative;
+				@include text-sm;
+				span {
+					position: absolute;
+					border: 1.5px rgb(99, 148, 76) solid;
+					background-color: rgb(99, 148, 76);
+					border-radius: 100%;
+					@include text-2xl;
+					right: 0;
+					height: 3rem;
+					width: 3rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}

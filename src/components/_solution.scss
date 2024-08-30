@@ -1,0 +1,33 @@
+@import "library";
+.solution {
+	background-color: $blue;
+	width: 100%;
+	margin-top: -0.45rem;
+	position: relative;
+	color: $white;
+	div {
+		width: 90%;
+		margin: 0 auto;
+		img {
+			width: 100%;
+			border-radius: 1.5rem;
+			margin: 3rem auto;
+			position: relative;
+		}
+	}
+	.solution-content {
+		width: 80%;
+		margin: 0 auto;
+		h2 {
+			@include text-3xl;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-weight: 500;
+			@include text-sm;
+			letter-spacing: 0.8px;
+		}
+	}
+}

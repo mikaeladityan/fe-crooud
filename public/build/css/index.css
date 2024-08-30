@@ -205,6 +205,138 @@ main .inspiration .container .inspiration-body .card:nth-child(8) {
   background-color: #f8b71f;
 }
 
+.about-us {
+  position: relative;
+  padding-top: 11rem;
+}
+.about-us .about-body {
+  background-color: #0c2f4a;
+  padding-bottom: 2rem;
+  position: relative;
+  top: -0.4rem;
+}
+.about-us .about-body .container {
+  padding: 0 0rem;
+}
+.about-us .about-body .container h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2rem 0;
+}
+.about-us .about-body .container .grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.about-us .about-body .container .grid .card {
+  background-color: rgba(255, 255, 255, 0.1254901961);
+  border-radius: 1rem;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  padding: 2rem;
+}
+.about-us .about-body .container .grid .card .icon-card {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.about-us .about-body .container .grid .card .icon-card i {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  color: #6ebe4a;
+}
+.about-us .about-body .container .grid .card .card-body {
+  color: #fff;
+}
+.about-us .about-body .container .grid .card .card-body i {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .about-body .container .grid .card .card-body h3 {
+  margin-top: 3rem;
+}
+.about-us .about-body .container .grid .card .card-body p {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  text-wrap: wrap;
+}
+.about-us .about-body .container a {
+  margin: 2rem 0 0 0;
+  padding: 0.875rem 1.75rem;
+  border: 2px solid #6ebe4a;
+  background-color: #6ebe4a;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+  color: #f3fafd;
+  position: relative;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+.about-us .about-body .container a span {
+  position: absolute;
+  border: 1.5px rgb(99, 148, 76) solid;
+  background-color: rgb(99, 148, 76);
+  border-radius: 100%;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  right: 0;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution {
+  background-color: #0c2f4a;
+  width: 100%;
+  margin-top: -0.45rem;
+  position: relative;
+  color: #fff;
+}
+.solution div {
+  width: 90%;
+  margin: 0 auto;
+}
+.solution div img {
+  width: 100%;
+  border-radius: 1.5rem;
+  margin: 3rem auto;
+  position: relative;
+}
+.solution .solution-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.solution .solution-content h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.solution .solution-content p {
+  font-weight: 500;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: 0.8px;
+}
+
 *,
 :after,
 :before {
