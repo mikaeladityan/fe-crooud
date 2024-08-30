@@ -1,5 +1,5 @@
-@use "../components/header";
-@import "../components/library";
+@import "components/library", "components/header", "components/requirement", "components/inspiration",
+	"components/about", "components/solution", "components/footer";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 *,
@@ -11,6 +11,7 @@
 	padding: 0;
 }
 html {
+	@include text-base;
 	line-height: 1.5;
 	-webkit-text-size-adjust: 100%;
 	-moz-tab-size: 4;
@@ -49,13 +50,20 @@ input {
 	font-family: inherit;
 	font-feature-settings: inherit;
 	font-variation-settings: inherit;
-	font-size: 100%;
+	@include text-sm;
 	font-weight: inherit;
 	line-height: inherit;
 	letter-spacing: inherit;
-	color: inherit;
+	color: $blue;
 	margin: 0;
-	padding: 0;
+	padding: 0.5rem 1rem;
+	background-color: #d9d9d9;
+	border-radius: 3rem;
+	width: 100%;
+}
+input:focus {
+	outline: none !important;
+	border: none !important;
 }
 button {
 	text-transform: none;
@@ -82,4 +90,146 @@ ul {
 }
 .visible {
 	display: block;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 95%;
+	margin: 0 auto;
+}
+
+// Animation
+.animate-pulse {
+	animation: animate-pulseHB 3s ease 0s infinite normal both;
+}
+
+@keyframes animate-pulseHB {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.absolute-left {
+	left: 0;
+	top: 0;
+}
+
+.absolute-right {
+	right: 0;
+	top: 0;
+}
+
+.elements {
+	position: absolute;
+
+	div {
+		@include text-7xl;
+		font-weight: 800;
+		color: $light-white;
+		line-height: 0.9;
+	}
+	div:nth-child(3) {
+		margin-top: -0.5rem;
+	}
+	div:nth-child(2),
+	div:nth-child(4) {
+		-moz-transform: scale(1, -1);
+		-webkit-transform: scale(1, -1);
+		-o-transform: scale(1, -1);
+		-ms-transform: scale(1, -1);
+		transform: scale(1, -1);
+	}
+}
+
+.card {
+	width: 100% !important;
+	padding: 3rem;
+	background-color: $ligter-white;
+	border: 1px solid $light-white;
+	border-radius: 3rem;
+	box-shadow: rgba(0, 0, 0, 0.2) 3px 5px 6px;
+	img {
+		max-height: 12rem;
+		object-fit: contain;
+		width: 100%;
+	}
+	.card-title {
+		@include text-xl;
+		font-weight: 700;
+		letter-spacing: 1.7px;
+		margin-top: 1rem;
+	}
+	.card-body {
+		p {
+			@include text-sm;
+			letter-spacing: 0.8px;
+			font-weight: 400;
+			margin: 0.5rem 0;
+			text-wrap: balance;
+			width: 100%;
+		}
+		a {
+			@include text-sm;
+			letter-spacing: 0.8px;
+			font-weight: 600;
+			color: $green;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			gap: 0.5rem;
+			width: 100% !important;
+			i {
+				border-radius: 100%;
+				border: 1.5px solid $green;
+				font-size: 11px;
+				width: 1.2rem;
+				height: 1.2rem;
+				display: flex;
+				padding-left: 0.5px;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.bg-elements-footer {
+	margin-top: 0rem;
+}
+
+@media (min-width: 640px) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.container-fluid {
+		width: 90%;
+		margin: 0 auto;
+	}
 }

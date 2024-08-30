@@ -1,0 +1,90 @@
+@import "library";
+
+main {
+	width: 100%;
+	.requirements {
+		position: relative;
+		.container {
+			padding-top: 5rem;
+			position: relative;
+			z-index: 1;
+			display: grid;
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			gap: 1rem;
+			h2 {
+				@include text-3xl;
+				font-weight: 800;
+				text-transform: uppercase;
+				color: $blue;
+			}
+			div {
+				p {
+					margin: 1.5rem 0;
+				}
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+		.carousel {
+			.owl-carousel {
+				.item {
+					margin: 2rem;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	main {
+		.requirements {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+				gap: 1rem;
+			}
+			.carousel {
+				.owl-carousel {
+					.item {
+						margin: 2rem 10rem !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		.requirements {
+			.container {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1rem;
+				h2 {
+					@include text-4xl;
+					font-weight: 800;
+					text-transform: uppercase;
+					color: $blue;
+				}
+				div {
+					p {
+						margin: 0rem 0;
+					}
+					a {
+						text-decoration: underline;
+					}
+				}
+			}
+			.carousel {
+				.owl-carousel {
+					.item {
+						margin: 2rem 1rem !important;
+					}
+				}
+			}
+		}
+	}
+}
