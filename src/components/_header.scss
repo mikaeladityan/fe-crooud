@@ -113,26 +113,25 @@ header {
 				}
 			}
 		}
-		img {
+		.img-header {
 			display: none;
 		}
 	}
 }
 
 @media (min-width: 640px) {
-	section {
-		div {
-			p {
-				font-weight: 400;
-				margin-bottom: 2rem;
-				width: 60%;
+	header {
+		section {
+			div {
+				p {
+					font-weight: 400;
+					margin-bottom: 2rem;
+					width: 60%;
+				}
+				a {
+					width: 40% !important;
+				}
 			}
-			a {
-				width: 40% !important;
-			}
-		}
-		img {
-			display: none;
 		}
 	}
 }

@@ -106,3 +106,60 @@ footer {
 		@include text-xs;
 	}
 }
+
+@media (min-width: 640px) {
+	.main-footer {
+		margin-top: 1.5rem;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+		gap: 1.5rem;
+		p {
+			@include text-sm;
+		}
+		div {
+			h5 {
+				@include text-lg;
+				font-weight: 700;
+				color: $blue;
+				margin-bottom: 0.85rem;
+			}
+			.form-input {
+				width: 60%;
+				.input-group {
+					background-color: #d9d9d9;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 3rem;
+					margin-top: 0.5rem;
+					button {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 2rem;
+						height: 2rem;
+						background-color: $blue;
+						color: $white;
+					}
+				}
+			}
+		}
+		.certification {
+			div {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+				gap: 1rem;
+				div {
+					background-color: #f2f2e4;
+					width: 100%;
+					padding: 1rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: $blue;
+					border-radius: 1rem;
+				}
+			}
+		}
+	}
+}

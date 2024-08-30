@@ -167,7 +167,7 @@ ul {
 }
 
 .card {
-	width: 100%;
+	width: 100% !important;
 	padding: 3rem;
 	background-color: $ligter-white;
 	border: 1px solid $light-white;
@@ -191,6 +191,7 @@ ul {
 			font-weight: 400;
 			margin: 0.5rem 0;
 			text-wrap: balance;
+			width: 100%;
 		}
 		a {
 			@include text-sm;
@@ -201,6 +202,7 @@ ul {
 			align-items: center;
 			justify-content: start;
 			gap: 0.5rem;
+			width: 100% !important;
 			i {
 				border-radius: 100%;
 				border: 1.5px solid $green;
@@ -213,5 +215,21 @@ ul {
 				justify-content: center;
 			}
 		}
+	}
+}
+
+.bg-elements-footer {
+	margin-top: 0rem;
+}
+
+@media (min-width: 640px) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.container-fluid {
+		width: 90%;
+		margin: 0 auto;
 	}
 }

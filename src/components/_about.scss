@@ -90,3 +90,39 @@
 		}
 	}
 }
+
+@media (min-width: 640px) {
+	.about-us {
+		.about-body {
+			.container {
+				a {
+					margin: 2rem auto 0 auto;
+					width: 80% !important;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about-us {
+		padding-top: 14rem;
+		.about-body {
+			.container {
+				h2 {
+					@include text-5xl;
+				}
+				.grid {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					gap: 1.5rem;
+				}
+
+				a {
+					margin: 2rem auto 0 auto;
+					width: 40% !important;
+				}
+			}
+		}
+	}
+}

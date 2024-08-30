@@ -25,6 +25,7 @@ main {
 				display: grid;
 				grid-template-columns: repeat(1, minmax(0, 1fr));
 				gap: 1.5rem;
+				padding: 0 0rem;
 				.card {
 					color: $white;
 					a {
@@ -63,6 +64,49 @@ main {
 				}
 				.card:nth-child(8) {
 					background-color: #f8b71f;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	main {
+		.inspiration {
+			.container {
+				.inspiration-body {
+					display: grid;
+					grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+					gap: 1.5rem;
+					padding: 0 4rem !important;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	main {
+		.inspiration {
+			.container {
+				width: 90%;
+				padding-top: 5rem !important;
+				position: relative;
+				z-index: 1;
+
+				.inspiration-header {
+					width: 45% !important;
+					h2 {
+						@include text-5xl;
+					}
+					a {
+						@include text-xl;
+					}
+				}
+				.inspiration-body {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+					gap: 1.5rem;
+					padding: 0 0rem !important;
 				}
 			}
 		}

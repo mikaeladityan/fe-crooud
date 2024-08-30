@@ -1,10 +1,14 @@
 @import "library";
 .solution {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+	gap: 1rem;
 	background-color: $blue;
 	width: 100%;
 	margin-top: -0.45rem;
 	position: relative;
 	color: $white;
+	padding: 1rem 0;
 	div {
 		width: 90%;
 		margin: 0 auto;
@@ -28,6 +32,59 @@
 			font-weight: 500;
 			@include text-sm;
 			letter-spacing: 0.8px;
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	.solution {
+		.solution-content {
+			width: 100%;
+			padding: 0 3rem;
+			margin: auto;
+			h2 {
+				@include text-3xl;
+				font-weight: 800;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+			}
+			p {
+				font-weight: 500;
+				@include text-sm;
+				letter-spacing: 0.8px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.solution {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+		gap: 0.5rem;
+
+		div {
+			width: 100%;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				margin: 0rem auto;
+			}
+		}
+		.solution-content {
+			width: 100%;
+			margin: 0 auto;
+			grid-column: span 2 / span 2;
+			h2 {
+				@include text-3xl;
+				font-weight: 800;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+			}
+			p {
+				@include text-base;
+			}
 		}
 	}
 }
