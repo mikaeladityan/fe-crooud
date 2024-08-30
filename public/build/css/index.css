@@ -114,44 +114,95 @@ header section img {
 main {
   width: 100%;
 }
-main section {
+main .requirements {
   position: relative;
 }
-main section .elements {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-main section .elements div {
-  font-size: 6rem; /* 96px */
-  line-height: 1;
-  font-weight: 800;
-  color: #f1f1ee;
-}
-main section .elements div:nth-child(2) {
-  -moz-transform: scale(1, -1);
-  -webkit-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  transform: scale(1, -1);
-  line-height: 0.7;
-}
-main section .container {
+main .requirements .container {
   padding-top: 5rem;
   position: relative;
   z-index: 1;
 }
-main section .container h2 {
+main .requirements .container h2 {
   font-size: 1.875rem; /* 30px */
   line-height: 2.25rem; /* 36px */
   font-weight: 800;
   text-transform: uppercase;
+  color: #0c2f4a;
 }
-main section .container div p {
+main .requirements .container div p {
   margin: 1.5rem 0;
 }
-main section .container div a {
+main .requirements .container div a {
   text-decoration: underline;
+}
+main .requirements .carousel .owl-carousel .item {
+  margin: 2rem;
+}
+
+main .inspiration {
+  position: relative;
+  margin: 5rem 0;
+}
+main .inspiration .container {
+  padding-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+main .inspiration .container .inspiration-header {
+  width: 70%;
+  margin: 0 auto 3rem auto;
+}
+main .inspiration .container .inspiration-header h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 800;
+  color: #0c2f4a;
+}
+main .inspiration .container .inspiration-header a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+main .inspiration .container .inspiration-body {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+main .inspiration .container .inspiration-body .card {
+  color: #fff;
+}
+main .inspiration .container .inspiration-body .card a {
+  color: #fff;
+}
+main .inspiration .container .inspiration-body .card a i {
+  border-radius: 100%;
+  border: 1.5px solid #fff;
+}
+main .inspiration .container .inspiration-body .card .card-body div {
+  margin-bottom: 3rem;
+}
+main .inspiration .container .inspiration-body .card:nth-child(1) {
+  background-color: #9f9f9f;
+}
+main .inspiration .container .inspiration-body .card:nth-child(2) {
+  background-color: #cb2b2c;
+}
+main .inspiration .container .inspiration-body .card:nth-child(3) {
+  background-color: #4fb5d1;
+}
+main .inspiration .container .inspiration-body .card:nth-child(4) {
+  background-color: #68a578;
+}
+main .inspiration .container .inspiration-body .card:nth-child(5) {
+  background-color: #f8b3d4;
+}
+main .inspiration .container .inspiration-body .card:nth-child(6) {
+  background-color: #b8b938;
+}
+main .inspiration .container .inspiration-body .card:nth-child(7) {
+  background-color: #0c8ed4;
+}
+main .inspiration .container .inspiration-body .card:nth-child(8) {
+  background-color: #f8b71f;
 }
 
 *,
@@ -279,6 +330,88 @@ ul {
     animation-timing-function: ease-out;
     transform: scale(1);
   }
+}
+.absolute-left {
+  left: 0;
+  top: 0;
+}
+
+.absolute-right {
+  right: 0;
+  top: 0;
+}
+
+.elements {
+  position: absolute;
+}
+.elements div {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+  font-weight: 800;
+  color: #f1f1ee;
+  line-height: 0.9;
+}
+.elements div:nth-child(3) {
+  margin-top: -0.5rem;
+}
+.elements div:nth-child(2),
+.elements div:nth-child(4) {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.card {
+  width: 100%;
+  padding: 3rem;
+  background-color: #f3fafd;
+  border: 1px solid #f1f1ee;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 5px 6px;
+}
+.card img {
+  max-height: 12rem;
+  object-fit: contain;
+  width: 100%;
+}
+.card .card-title {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-top: 1rem;
+}
+.card .card-body p {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  text-wrap: balance;
+}
+.card .card-body a {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #6ebe4a;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.card .card-body a i {
+  border-radius: 100%;
+  border: 1.5px solid #6ebe4a;
+  font-size: 11px;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  padding-left: 0.5px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=index.css.map */

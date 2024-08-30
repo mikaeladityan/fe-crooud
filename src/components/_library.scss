@@ -40,11 +40,15 @@ $blue: #0c2f4a;
 	font-size: 1.875rem; /* 30px */
 	line-height: 2.25rem; /* 36px */
 }
-
-@mixin text-9xl {
+@mixin text-7xl {
+	font-size: 4.5rem; /* 72px */
+	line-height: 1;
+}
+@mixin text-8xl {
 	font-size: 6rem; /* 96px */
 	line-height: 1;
 }
+
 // text-4xl	font-size: 2.25rem; /* 36px */
 // line-height: 2.5rem; /* 40px */
 // text-5xl	font-size: 3rem; /* 48px */

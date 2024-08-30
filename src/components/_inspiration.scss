@@ -1,0 +1,70 @@
+@import "library";
+main {
+	.inspiration {
+		position: relative;
+		margin: 5rem 0;
+		.container {
+			padding-top: 2rem;
+			position: relative;
+			z-index: 1;
+
+			.inspiration-header {
+				width: 70%;
+				margin: 0 auto 3rem auto;
+				h2 {
+					@include text-3xl;
+					font-weight: 800;
+					color: $blue;
+				}
+				a {
+					text-decoration: underline;
+					font-weight: 600;
+				}
+			}
+			.inspiration-body {
+				display: grid;
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+				gap: 1.5rem;
+				.card {
+					color: $white;
+					a {
+						color: $white;
+						i {
+							border-radius: 100%;
+							border: 1.5px solid $white;
+						}
+					}
+					.card-body {
+						div {
+							margin-bottom: 3rem;
+						}
+					}
+				}
+				.card:nth-child(1) {
+					background-color: #9f9f9f;
+				}
+				.card:nth-child(2) {
+					background-color: #cb2b2c;
+				}
+				.card:nth-child(3) {
+					background-color: #4fb5d1;
+				}
+				.card:nth-child(4) {
+					background-color: #68a578;
+				}
+				.card:nth-child(5) {
+					background-color: #f8b3d4;
+				}
+				.card:nth-child(6) {
+					background-color: #b8b938;
+				}
+				.card:nth-child(7) {
+					background-color: #0c8ed4;
+				}
+				.card:nth-child(8) {
+					background-color: #f8b71f;
+				}
+			}
+		}
+	}
+}
