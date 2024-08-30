@@ -3,6 +3,7 @@ header {
   color: #fff;
   background-color: #0c2f4a;
   position: relative;
+  padding-bottom: 1rem;
 }
 header nav {
   display: flex;
@@ -83,10 +84,74 @@ header section div a {
   padding: 0.875rem 1.75rem;
   border: 2px solid #fff;
   border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 60%;
+  color: #f3fafd;
+  position: relative;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+header section div a span {
+  position: absolute;
+  border: 1.5px #fff solid;
+  border-radius: 100%;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  right: 0;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header section img {
-  width: 60%;
-  margin: 0 auto;
+  display: none;
+}
+
+main {
+  width: 100%;
+}
+main section {
+  position: relative;
+}
+main section .elements {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+main section .elements div {
+  font-size: 6rem; /* 96px */
+  line-height: 1;
+  font-weight: 800;
+  color: #f1f1ee;
+}
+main section .elements div:nth-child(2) {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+  line-height: 0.7;
+}
+main section .container {
+  padding-top: 5rem;
+  position: relative;
+  z-index: 1;
+}
+main section .container h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 800;
+  text-transform: uppercase;
+}
+main section .container div p {
+  margin: 1.5rem 0;
+}
+main section .container div a {
+  text-decoration: underline;
 }
 
 *,
@@ -186,6 +251,34 @@ ul {
 .container-fluid {
   width: 95%;
   margin: 0 auto;
+}
+
+.animate-pulse {
+  animation: animate-pulseHB 3s ease 0s infinite normal both;
+}
+
+@keyframes animate-pulseHB {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

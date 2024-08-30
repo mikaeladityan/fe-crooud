@@ -1,0 +1,45 @@
+@import "library";
+
+main {
+	width: 100%;
+	section {
+		position: relative;
+		.elements {
+			position: absolute;
+			right: 0;
+			top: 0;
+			div {
+				@include text-9xl;
+				font-weight: 800;
+				color: $light-white;
+			}
+			div:nth-child(2) {
+				-moz-transform: scale(1, -1);
+				-webkit-transform: scale(1, -1);
+				-o-transform: scale(1, -1);
+				-ms-transform: scale(1, -1);
+				transform: scale(1, -1);
+
+				line-height: 0.7;
+			}
+		}
+		.container {
+			padding-top: 5rem;
+			position: relative;
+			z-index: 1;
+			h2 {
+				@include text-3xl;
+				font-weight: 800;
+				text-transform: uppercase;
+			}
+			div {
+				p {
+					margin: 1.5rem 0;
+				}
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
