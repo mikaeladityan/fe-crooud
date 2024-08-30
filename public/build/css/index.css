@@ -4,24 +4,29 @@ header {
   background-color: #0c2f4a;
   position: relative;
   padding-bottom: 1rem;
+  width: 100%;
 }
 header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
   padding: 1rem 0.5rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
 }
-header nav div a {
+header nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .navbar div a {
   font-size: 1.25rem; /* 20px */
   line-height: 1.75rem; /* 28px */
   font-weight: 800;
   letter-spacing: 0.1rem;
 }
-header nav div ul {
+header nav .navbar div ul {
   display: none;
+}
+header nav .navbar button {
+  width: 2rem;
 }
 header menu {
   position: absolute;
@@ -52,6 +57,10 @@ header menu button {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  width: 2.6rem;
+}
+header .show {
+  display: block;
 }
 header section {
   display: grid;
@@ -111,6 +120,19 @@ header section img {
   display: none;
 }
 
+@media (min-width: 640px) {
+  section div p {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 60%;
+  }
+  section div a {
+    width: 40% !important;
+  }
+  section img {
+    display: none;
+  }
+}
 main {
   width: 100%;
 }
@@ -365,11 +387,25 @@ footer .head-footer .list-footer {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
-footer .head-footer .list-footer h6 {
+footer .head-footer .list-footer div h6 {
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
   font-weight: 700;
   color: #0c2f4a;
+  text-align: start;
+}
+footer .head-footer .list-footer div ul {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+footer .head-footer .list-footer div ul li {
+  text-align: start;
+}
+footer .head-footer .list-footer div ul li a {
+  font-weight: 500;
+}
+footer .head-footer .list-footer div ul li a i {
+  font-size: 11px;
 }
 footer .main-footer {
   margin-top: 1.5rem;
@@ -407,6 +443,27 @@ footer .main-footer div .form-input .input-group button {
   height: 2rem;
   background-color: #0c2f4a;
   color: #fff;
+}
+footer .main-footer .certification div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+footer .main-footer .certification div div {
+  background-color: #f2f2e4;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c2f4a;
+  border-radius: 1rem;
+}
+footer .bot-footer {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
 }
 
 *,
