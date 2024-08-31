@@ -4,8 +4,7 @@
 	"description": "Development for Test Frontend in crouud company",
 	"scripts": {
 		"init": "sass src/index.scss public/build/css/index.css",
-		"dev": "sass --watch src/index.scss public/build/css/index.css",
-		"minify": "sass --watch src/index.scss public/build/css/index.css"
+		"dev": "sass --watch src/index.scss public/build/css/index.css"
 	},
 	"author": "Mikael Aditya Nugroho",
 	"license": "ISC"
