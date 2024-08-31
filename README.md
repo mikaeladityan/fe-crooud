@@ -44,7 +44,7 @@ fe-crooud/
 │   │   └── main.scss
 │   ├── js/
 │   │   └── main.js
-│   └── images/
+│   ├── images/
 │   └── index.html
 │
 ├── package.json
