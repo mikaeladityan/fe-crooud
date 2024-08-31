@@ -27,6 +27,30 @@ Website ini dikembangkan menggunakan teknologi web modern:
 - Owl Carousel untuk slider produk
 - Font Awesome untuk ikon
 
+## Struktur Folder
+
+Berikut adalah struktur folder proyek ini:
+
+```
+fe-crooud/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── scss/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   └── main.scss
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
 ## Instalasi dan Penggunaan
 
 1. Clone repositori ini:
@@ -37,7 +61,19 @@ Website ini dikembangkan menggunakan teknologi web modern:
    ```
    cd fe-crooud
    ```
-3. Buka file `index.html` di browser Anda atau gunakan server lokal seperti Live Server di VS Code.
+3. Instal dependensi:
+   ```
+   npm install
+   ```
+4. Untuk menjalankan pengembangan SASS, gunakan perintah:
+
+   ```
+   npm run dev
+   ```
+
+   Perintah ini akan memulai proses kompilasi SASS ke CSS dan akan memantau perubahan pada file SASS.
+
+5. Buka file `index.html` di browser Anda atau gunakan server lokal seperti Live Server di VS Code.
 
 ## Kontribusi
 
