@@ -104,61 +104,378 @@ footer {
 		margin: 2rem 0;
 		text-align: center;
 		@include text-xs;
+		div {
+			display: flex;
+			flex: none;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			p {
+				margin-top: 0rem;
+			}
+		}
+		p {
+			margin-top: 2rem;
+		}
 	}
 }
 
 @media (min-width: 640px) {
-	.main-footer {
-		margin-top: 1.5rem;
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-		gap: 1.5rem;
-		p {
-			@include text-sm;
-		}
-		div {
-			h5 {
-				@include text-lg;
-				font-weight: 700;
-				color: $blue;
-				margin-bottom: 0.85rem;
-			}
-			.form-input {
+	footer {
+		.main-footer {
+			margin-top: 1.5rem;
+			display: grid;
+			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+			gap: 1.5rem;
+			p {
+				@include text-sm;
 				width: 60%;
-				.input-group {
-					background-color: #d9d9d9;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border-radius: 3rem;
-					margin-top: 0.5rem;
-					button {
+			}
+			div {
+				h5 {
+					@include text-lg;
+					font-weight: 700;
+					color: $blue;
+					margin-bottom: 0.85rem;
+				}
+				.form-input {
+					width: 40%;
+					.input-group {
+						background-color: #d9d9d9;
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						width: 2rem;
-						height: 2rem;
-						background-color: $blue;
-						color: $white;
+						border-radius: 3rem;
+						margin-top: 0.5rem;
+						button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 2rem;
+							height: 2rem;
+							background-color: $blue;
+							color: $white;
+						}
+					}
+				}
+			}
+			.certification {
+				div {
+					display: grid;
+					grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+					gap: 1rem;
+					div {
+						background-color: #f2f2e4;
+						width: 100%;
+						padding: 1rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: $blue;
+						border-radius: 1rem;
 					}
 				}
 			}
 		}
-		.certification {
+		.bot-footer {
+			margin: 2rem 0;
+			text-align: center;
+			@include text-xs;
 			div {
-				display: grid;
-				grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-				gap: 1rem;
+				width: 100%;
+				display: flex;
+				flex: none;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1.5rem;
+				p {
+					margin-top: 0;
+				}
+			}
+			p {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		.main-footer {
+			grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+			p {
+				width: 70%;
+			}
+			div {
+				.form-input {
+					width: 70%;
+				}
+			}
+		}
+		.bot-footer {
+			margin: 2rem 0;
+			text-align: center;
+			@include text-xs;
+			div {
+				display: flex;
+				flex: content;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1.5rem;
+				p {
+					margin-top: 0;
+				}
+			}
+			p {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	footer {
+		position: relative;
+		.head-footer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.5rem;
+			div {
+				text-align: center;
 				div {
-					background-color: #f2f2e4;
-					width: 100%;
-					padding: 1rem;
+					margin-top: 0rem;
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					color: $blue;
-					border-radius: 1rem;
+					gap: 1rem;
+					i {
+						@include text-xl;
+					}
 				}
+			}
+			.list-footer {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 1.5rem;
+				div {
+					h6 {
+						@include text-lg;
+						font-weight: 700;
+						color: $blue;
+						text-align: start;
+					}
+					ul {
+						@include text-xs;
+						li {
+							text-align: start;
+							a {
+								font-weight: 500;
+								i {
+									font-size: 11px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.main-footer {
+			margin-top: 1.5rem;
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+			gap: 1.5rem;
+			p {
+				@include text-sm;
+				width: 100%;
+			}
+			div {
+				h5 {
+					@include text-lg;
+					font-weight: 700;
+					color: $blue;
+					margin-bottom: 0.85rem;
+				}
+				.form-input {
+					width: 80%;
+					.input-group {
+						background-color: #d9d9d9;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 3rem;
+						margin-top: 0.5rem;
+						button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 2rem;
+							height: 2rem;
+							background-color: $blue;
+							color: $white;
+						}
+					}
+				}
+			}
+			.certification {
+				div {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					gap: 1rem;
+					div {
+						background-color: #f2f2e4;
+						width: 100%;
+						padding: 1rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: $blue;
+						border-radius: 1rem;
+					}
+				}
+			}
+		}
+		.bot-footer {
+			margin: 2rem 0;
+			text-align: center;
+			@include text-xs;
+			div {
+				width: 100%;
+				display: flex;
+				flex: none;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1.5rem;
+				p {
+					margin-top: 0;
+				}
+			}
+			p {
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	footer {
+		position: relative;
+		.head-footer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1.5rem;
+			div {
+				text-align: center;
+				div {
+					margin-top: 0rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 1rem;
+					i {
+						@include text-xl;
+					}
+				}
+			}
+			.list-footer {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 1.5rem;
+				div {
+					h6 {
+						@include text-lg;
+						font-weight: 700;
+						color: $blue;
+						text-align: start;
+					}
+					ul {
+						@include text-xs;
+						li {
+							text-align: start;
+							a {
+								font-weight: 500;
+								i {
+									font-size: 11px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.main-footer {
+			margin-top: 1.5rem;
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+			gap: 1.5rem;
+			p {
+				@include text-sm;
+				width: 70%;
+			}
+			div {
+				h5 {
+					@include text-lg;
+					font-weight: 700;
+					color: $blue;
+					margin-bottom: 0.85rem;
+				}
+				.form-input {
+					width: 60%;
+					.input-group {
+						background-color: #d9d9d9;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 3rem;
+						margin-top: 0.5rem;
+						button {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 2rem;
+							height: 2rem;
+							background-color: $blue;
+							color: $white;
+						}
+					}
+				}
+			}
+			.certification {
+				div {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					gap: 1rem;
+					div {
+						background-color: #f2f2e4;
+						width: 100%;
+						padding: 1rem;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: $blue;
+						border-radius: 1rem;
+					}
+				}
+			}
+		}
+		.bot-footer {
+			margin: 2rem 0;
+			text-align: center;
+			@include text-xs;
+			div {
+				width: 100%;
+				display: flex;
+				flex: none;
+				justify-content: space-between;
+				align-items: center;
+				gap: 1.5rem;
+				p {
+					margin-top: 0;
+				}
+			}
+			p {
+				margin-top: 2rem;
 			}
 		}
 	}

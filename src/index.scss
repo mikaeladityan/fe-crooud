@@ -21,6 +21,7 @@ html {
 	font-feature-settings: normal;
 	font-variation-settings: normal;
 	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -43,6 +44,18 @@ a {
 b,
 strong {
 	font-weight: bolder;
+}
+
+body::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: $white;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: $blue;
 }
 
 button,
@@ -215,6 +228,17 @@ ul {
 				justify-content: center;
 			}
 		}
+		.card-category {
+			text-align: center;
+			span {
+				padding: 0.4rem 1.5rem;
+				@include text-xs;
+				text-align: center;
+				background-color: #ffffff60;
+				border-radius: 1rem;
+				margin: 1rem 0;
+			}
+		}
 	}
 }
 
@@ -232,4 +256,22 @@ ul {
 		width: 90%;
 		margin: 0 auto;
 	}
+}
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.5;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+.container,
+.container-fluid,
+.carousel {
+	animation: appear linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 40%;
 }

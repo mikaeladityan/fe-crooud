@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<title>Titanium Printing</title>
 		<link
 			rel="stylesheet"
-			href="/public/build/css/index.css"
+			href="/public/build/css/index.min.css"
 		/>
-
-		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 		/>
-
-		<!-- Owl Carousel -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -26,22 +23,32 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
 		/>
-		<title>Titanium Printing</title>
 	</head>
 	<body>
 		<header>
 			<nav class="container-fluid">
 				<div class="navbar">
 					<div>
-						<a href="">Titanium</a>
+						<a href="/">Titanium</a>
 						<ul>
-							<li><a href="">Cetak custom</a></li>
-							<li><a href="">Inspirasi</a></li>
-							<li><a href="">Tentang kami</a></li>
-							<li><a href="">Agen</a></li>
+							<li>
+								<a href="#requirements"> Cetak custom</a>
+							</li>
+							<li>
+								<a href="#inspiration"> Inspirasi</a>
+							</li>
+							<li>
+								<a href="#about-us"> Tentang kami</a>
+							</li>
+							<li>
+								<a href="#solution"> Agen</a>
+							</li>
 						</ul>
 					</div>
-					<button id="button-open">
+					<button
+						id="button-open"
+						style="cursor: grabbing"
+					>
 						<i
 							class="fa-solid fa-bars fa-fw"
 							style="color: white"
@@ -51,20 +58,34 @@
 
 				<!-- Mobile Menu -->
 				<menu>
+					<div class="mobile-menu">
+						<li>
+							<a href="#requirements"> <i class="fa-solid fa-fw fa-plus"></i> Cetak custom</a>
+						</li>
+						<li>
+							<a href="#inspiration"> <i class="fa-solid fa-fw fa-plus"></i> Inspirasi</a>
+						</li>
+						<li>
+							<a href="#about-us"> <i class="fa-solid fa-fw fa-plus"></i> Tentang kami</a>
+						</li>
+						<li>
+							<a href="#solution"> <i class="fa-solid fa-fw fa-plus"></i> Agen</a>
+						</li>
+					</div>
 					<li>
-						<a href=""> <i class="fa-solid fa-fw fa-plus"></i> Cetak custom</a>
+						<a href="https://wa.me/6285608580054"> <i class="fa-solid fa-fw fa-plus"></i> Hubungi Kami</a>
 					</li>
 					<li>
-						<a href=""> <i class="fa-solid fa-fw fa-plus"></i> Inspirasi</a>
+						<a href="https://wa.me/6285608580054"> <i class="fa-solid fa-fw fa-plus"></i> Social Media</a>
 					</li>
 					<li>
-						<a href=""> <i class="fa-solid fa-fw fa-plus"></i> Tentang kami</a>
-					</li>
-					<li>
-						<a href=""> <i class="fa-solid fa-fw fa-plus"></i> Agen</a>
+						<a href="https://wa.me/6285608580054"> <i class="fa-solid fa-fw fa-plus"></i> Masuk</a>
 					</li>
 
-					<button id="button-close">
+					<button
+						id="button-close"
+						style="cursor: grabbing"
+					>
 						<i
 							class="fa-solid fa-xmark fa-fw fa-xl"
 							style="color: white"
@@ -74,7 +95,7 @@
 			</nav>
 
 			<!-- Hero Section -->
-			<section class="container-fluid">
+			<section class="hero container-fluid">
 				<div>
 					<h1>Titanium Printer</h1>
 					<h2>
@@ -82,25 +103,26 @@
 						Shop
 					</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, harum?</p>
-					<a
-						href=""
-						class="animate-pulse"
-					>
+					<a href="https://wa.me/6285608580054">
 						Order Sekarang
-						<span>
+						<span class="animate-pulse">
 							<i class="fa-solid fa-arrow-right fa-fw"></i>
 						</span>
 					</a>
 				</div>
 				<img
-					class="img-header"
+					class="img-header animate-pulse"
 					src="/public/assets/header-img.webp"
 					alt=""
 				/>
 			</section>
 		</header>
+
 		<main>
-			<section class="requirements">
+			<section
+				id="requirements"
+				class="requirements"
+			>
 				<div class="elements absolute-right">
 					<div>TITA</div>
 					<div>TITA</div>
@@ -115,7 +137,7 @@
 					</h2>
 					<div>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt molestias odio sit labore expedita!</p>
-						<a href="">Lihat layanan lainnya</a>
+						<a href="https://wa.me/6285608580054">Lihat layanan lainnya</a>
 					</div>
 				</div>
 
@@ -132,7 +154,7 @@
 								<h3 class="card-title">Cetak Goodie bag</h3>
 								<div class="card-body">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit!</p>
-									<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
+									<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
 								</div>
 							</div>
 						</div>
@@ -145,7 +167,7 @@
 								<h3 class="card-title">Cetak Buku</h3>
 								<div class="card-body">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit!</p>
-									<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
+									<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
 								</div>
 							</div>
 						</div>
@@ -158,7 +180,7 @@
 								<h3 class="card-title">Cetak Boneka</h3>
 								<div class="card-body">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit!</p>
-									<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
+									<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
 								</div>
 							</div>
 						</div>
@@ -171,7 +193,7 @@
 								<h3 class="card-title">Cetak Kemasan</h3>
 								<div class="card-body">
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit!</p>
-									<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
+									<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat semua kemasan</a>
 								</div>
 							</div>
 						</div>
@@ -179,7 +201,10 @@
 				</div>
 			</section>
 
-			<section class="inspiration">
+			<section
+				id="inspiration"
+				class="inspiration"
+			>
 				<div class="elements absolute-left">
 					<div>ANIUM</div>
 					<div>ANIUM</div>
@@ -194,151 +219,154 @@
 							Anda Butuh <br />
 							Inspirasi?
 						</h2>
-						<p>Lihat <a href="">semua layanan</a> kami</p>
+						<p>Lihat <a href="https://wa.me/6285608580054">semua layanan</a> kami</p>
 					</div>
 
 					<div class="inspiration-body">
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-1.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-2.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-3.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-4.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-5.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-6.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-7.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 						<div class="card">
 							<img
-								src="/public/assets/header-img.webp"
+								src="/public/assets/inspiration-8.jpg"
 								alt=""
 							/>
-							<h3 class="card-title">Cetak Goodie bag</h3>
+							<h3 class="card-title">Portfolio Cetakan</h3>
 							<div class="card-body">
-								<div>
+								<div class="card-category">
 									<span>kategori</span>
 									<span>kategori</span>
 									<span>kategori lainnya</span>
 									<span>kategori</span>
 									<span>kategori</span>
 								</div>
-								<a href=""><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-arrow-down"></i>Lihat produk sejenis</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="about-us">
+			<section
+				id="about-us"
+				class="about-us"
+			>
 				<div class="elements absolute-right">
 					<div>ANIUM</div>
 					<div>ANIUM</div>
@@ -429,7 +457,7 @@
 							</div>
 						</div>
 
-						<a href="">
+						<a href="https://wa.me/6285608580054">
 							Order Sekarang
 							<span class="animate-pulse">
 								<i class="fa-solid fa-arrow-right fa-fw"></i>
@@ -439,7 +467,10 @@
 				</div>
 			</section>
 
-			<section class="solution">
+			<section
+				id="solution"
+				class="solution"
+			>
 				<div>
 					<img
 						src="/public/assets/solutions-image.webp"
@@ -471,186 +502,152 @@
 					d="M0,256L80,240C160,224,320,192,480,160C640,128,800,96,960,106.7C1120,117,1280,171,1360,197.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
 				></path>
 			</svg>
-			<footer class="container-fluid">
-				<div class="head-footer">
+		</main>
+
+		<footer class="container-fluid">
+			<div class="head-footer">
+				<div>
+					<h6>info@titanium.co.id</h6>
+					<!-- social media -->
 					<div>
-						<h6>info@titanium.co.id</h6>
-						<!-- social media -->
-						<div>
-							<i class="fa-brands fa-instagram"></i>
-							<i class="fa-brands fa-x-twitter"></i>
-							<i class="fa-brands fa-facebook"></i>
-						</div>
-					</div>
-					<div class="list-footer">
-						<div style="position: relative; display: inline-block">
-							<h6>Produk</h6>
-							<ul>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Home</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Cerita Kami</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Layanan Lain</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Hubungi Kami</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Packing Khusus</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Kerjasama</a>
-								</li>
-							</ul>
-						</div>
-						<div style="position: relative; display: inline-block">
-							<h6>Layanan</h6>
-							<ul>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Brosur</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak DTF</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Banner</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Leaflet</a>
-								</li>
-							</ul>
-						</div>
-						<div style="position: relative; display: inline-block">
-							<h6>Info</h6>
-							<ul>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> S&K</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Pengembalian</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> FAQ</a>
-								</li>
-								<li>
-									<a href=""><i class="fa-solid fa-fw fa-arrow-right"></i> Eksplorasi</a>
-								</li>
-							</ul>
-						</div>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-x-twitter"></i>
+						<i class="fa-brands fa-facebook"></i>
 					</div>
 				</div>
-				<div class="main-footer">
-					<p>Jl. Raya Kalirungkut No.1C, Panjang Jiwo, Kec. Tenggilis,Mejoyo, Surabaya, Jawa Timur, 60299</p>
-
-					<div>
-						<h5>Berlangganan</h5>
-						<div class="form-input">
+				<div class="list-footer">
+					<div style="position: relative; display: inline-block">
+						<h6>Produk</h6>
+						<ul>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Home</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Cerita Kami</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Layanan Lain</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Hubungi Kami</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Packing Khusus</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Kerjasama</a>
+							</li>
+						</ul>
+					</div>
+					<div style="position: relative; display: inline-block">
+						<h6>Layanan</h6>
+						<ul>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Brosur</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak DTF</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Banner</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Cetak Leaflet</a>
+							</li>
+						</ul>
+					</div>
+					<div style="position: relative; display: inline-block">
+						<h6>Info</h6>
+						<ul>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> S&K</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Pengembalian</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> FAQ</a>
+							</li>
+							<li>
+								<a href="https://wa.me/6285608580054"><i class="fa-solid fa-fw fa-arrow-right"></i> Eksplorasi</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer">
+				<p>Jl. Raya Kalirungkut No.1C, Panjang Jiwo, Kec. Tenggilis,Mejoyo, Surabaya, Jawa Timur, 60299</p>
+				<div>
+					<h5>Berlangganan</h5>
+					<div class="form-input">
+						<input
+							type="text"
+							placeholder="Nama Anda"
+						/>
+						<div class="input-group">
 							<input
 								type="text"
-								placeholder="Nama Anda"
+								placeholder="Alamat E-mail"
 							/>
-							<div class="input-group">
-								<input
-									type="text"
-									placeholder="Alamat E-mail"
-								/>
-								<button>
-									<i class="fa-solid fa-arrow-right"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="certification">
-						<h5>Sertifikasi</h5>
-						<div>
-							<div>
-								<i class="fa-brands fa-pagelines"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-globe"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-flask"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-bolt"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-charging-station"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-droplet"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-recycle"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-water"></i>
-							</div>
-							<div>
-								<i class="fa-solid fa-sun"></i>
-							</div>
+							<button>
+								<i class="fa-solid fa-arrow-right"></i>
+							</button>
 						</div>
 					</div>
 				</div>
-				<div class="bot-footer">
+				<div class="certification">
+					<h5>Sertifikasi</h5>
 					<div>
-						<a href="">Privacy Police</a>
-						<p>&copy; / 2024 / Titanium Printing / All rights reserved</p>
+						<div>
+							<i class="fa-brands fa-pagelines"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-globe"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-flask"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-bolt"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-charging-station"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-droplet"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-recycle"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-water"></i>
+						</div>
+						<div>
+							<i class="fa-solid fa-sun"></i>
+						</div>
 					</div>
-
-					<p>
-						Desain,development dan SEO by
-						<img
-							src="https://crooud.com/wp-content/uploads/2021/06/cropped-logo_crooud-32x32.png"
-							alt=""
-							style="width: 0.65rem; margin-left: 2px"
-						/>
-						<a href="">Crooud Agency</a>
-					</p>
 				</div>
-			</footer>
-		</main>
+			</div>
+			<div class="bot-footer">
+				<div>
+					<a href="https://wa.me/6285608580054">Privacy Police</a>
+					<p>&copy; / 2024 / Titanium Printing / All rights reserved</p>
+				</div>
+
+				<p>
+					Desain,development dan SEO by
+					<img
+						src="https://crooud.com/wp-content/uploads/2021/06/cropped-logo_crooud-32x32.png"
+						alt=""
+						style="width: 0.65rem; margin-left: 2px"
+					/>
+					<a href="https://wa.me/6285608580054">Crooud Agency</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="/public/js/main.js"></script>
 	</body>
-	<script>
-		const buttonOpen = document.getElementById("button-open");
-		const buttonClose = document.querySelector("#button-close");
-		const menu = document.querySelector("menu");
-
-		buttonOpen.addEventListener("click", () => {
-			menu.classList.add("show");
-		});
-
-		buttonClose.addEventListener("click", () => {
-			menu.classList.remove("show");
-		});
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script>
-		$(".owl-carousel").owlCarousel({
-			loop: true,
-			margin: 5,
-			center: true,
-			nav: false,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1,
-					autoplay: true,
-					autoplayTimeout: 3000,
-					autoplayHoverPause: true,
-				},
-				768: {
-					items: 2,
-				},
-				1000: {
-					items: 4,
-				},
-			},
-		});
-	</script>
 </html>
