@@ -32,14 +32,16 @@ header menu {
   position: absolute;
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   color: #fff;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10 !important;
   background-color: #0c2f4a;
+  padding: 1rem;
 }
 header menu .mobile-menu li {
+  z-index: 10 !important;
   margin: 0 0 0 auto;
   position: relative;
   top: 4rem;
@@ -54,6 +56,7 @@ header menu .mobile-menu li a {
   line-height: 1.75rem; /* 28px */
 }
 header menu li {
+  z-index: 10 !important;
   margin: 0 0 0 auto;
   position: relative;
   top: 4rem;
@@ -75,6 +78,9 @@ header menu button {
 }
 header .show {
   display: block;
+  position: relative;
+  z-index: 20 !important;
+  background-color: rgb(12, 54, 87);
 }
 header section {
   display: grid;
@@ -132,6 +138,8 @@ header section div a span {
 }
 header section .img-header {
   display: none;
+  z-index: 1;
+  position: relative;
 }
 
 @media (min-width: 640px) {
@@ -173,6 +181,9 @@ header section .img-header {
   }
   header nav .navbar button {
     width: 2rem;
+  }
+  header menu {
+    height: 40vh;
   }
   header menu .mobile-menu {
     display: none;
@@ -217,6 +228,7 @@ header section .img-header {
   header section {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
     gap: 1.5rem;
     padding: 1rem 0;
   }
@@ -275,6 +287,8 @@ header section .img-header {
     display: block;
     width: 80%;
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
   }
 }
 main {
@@ -1334,6 +1348,7 @@ html {
   font-feature-settings: normal;
   font-variation-settings: normal;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1359,6 +1374,18 @@ a {
 b,
 strong {
   font-weight: bolder;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0c2f4a;
 }
 
 button,
@@ -1532,6 +1559,18 @@ ul {
   align-items: center;
   justify-content: center;
 }
+.card .card-body .card-category {
+  text-align: center;
+}
+.card .card-body .card-category span {
+  padding: 0.4rem 1.5rem;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3764705882);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
 
 .bg-elements-footer {
   margin-top: 0rem;
@@ -1546,6 +1585,23 @@ ul {
     width: 90%;
     margin: 0 auto;
   }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.container,
+.container-fluid,
+.carousel {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 /*# sourceMappingURL=index.css.map */
