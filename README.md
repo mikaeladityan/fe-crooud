@@ -45,8 +45,8 @@ fe-crooud/
 │   ├── js/
 │   │   └── main.js
 │   └── images/
+│   ├── index.html
 │
-├── index.html
 ├── package.json
 └── README.md
 ```
